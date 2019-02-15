@@ -1,7 +1,8 @@
 ---
 layout: page
 title: install
-permalink: /install
+permalink: /document/guide/install
+menu: false
 ---
 
 ## Install

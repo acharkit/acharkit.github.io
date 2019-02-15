@@ -7,3 +7,16 @@
 - title: "AbstractFragment"
   parent: app
   url: "/document/app/abstractFragment"
+
+- title: "Guide"
+  id: guide
+
+- title: "Install"
+  parent: guide
+  url: "/document/guide/install"
+- title: "ChangeLog"
+  parent: guide
+  url: "/document/guide/changeLog"
+- title: "Progurd"
+  parent: guide
+  url: "/document/guide/progurd"

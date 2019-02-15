@@ -7,41 +7,80 @@ menu: false
 
 ## AbstractActivity
 
-<!-- For use acharkit must be [download](https://github.com/acharkit/acharkit-android/releases) last version.
+The abstractActivity is subClass from the appCompatActivity.
 
-Acharkit support androidx and google appcompat
-
-After adding aar to the lib folder in the project must be added the line below to build.gradle in the project root
-
-
-```groovy
-allprojects {
-        repositories {
-            google()
-            jcenter()
-            flatDir {
-                dirs 'libs'
-            }
-        }
-    }
+For use The abstractActivity must be extend activity from this.
+```java
+public class MainActivity extends AbstractActivity
 ```
 
-And add the line below to gradle.build module (such as app , ....)
+### getActivity
+Return current instance from this activity
 
-```groovy
-
-    implementation(name:'acharkit-release-x.x.x', ext:'aar')
-    or
-    compile(name:'acharkit-release-x.x.x', ext:'aar')
-
+```java
+getActivity();
 ```
 
-if using androidx
+### startActivity
+Show other activity with intent
 
-```groovy
+    argument:
+        Class class
 
-    implementation(name:'acharkitx-release-x.x.x', ext:'aar')
-    or
-    compile(name:'acharkitx-release-x.x.x', ext:'aar')
+```java
+startActivity(NextActivity.class);}
+```
 
-``` -->
+### getVisibleFragment()
+Return current fragment (if exist fragment)
+
+```java
+getVisibleFragment();
+```
+
+### getFragmentList
+Return list of fragment in backstack
+
+```java
+getFragmentList();
+```
+
+### findFragment
+Find the fragment from backstack
+
+    argument:
+        String tagId
+
+```java
+findFragment("tagIdFragment");
+```
+
+### hasBackStack
+Check any fragment is exist in backstack
+
+```java
+if (!hasBackStack()) {
+    ....
+}
+```
+
+### clearBackStack
+Clear any fragment from backstack
+
+```java
+clearBackStack();
+```
+
+### presentFragment
+Show fragment instance in activity
+
+    argument:
+        AbstractFragment fragment
+        int container
+        String tagId
+        boolean addToBackStack
+
+```java
+ExampleFragment exampleFragment = new ExampleFragment();
+presentFragment(exampleFragment, R.id.frameLayout, "FRAGMENT_TAG_ID", true);
+```
