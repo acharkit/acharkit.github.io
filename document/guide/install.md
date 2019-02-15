@@ -7,7 +7,7 @@ menu: false
 
 ## Install
 
-### Install from AAR
+#### Install from AAR
 
 For use acharkit must be [download](https://github.com/acharkit/acharkit-android/releases) last version.
 
@@ -15,6 +15,7 @@ Acharkit support androidx and google appcompat
 
 After adding aar to the lib folder in the project must be added the line below to build.gradle in the project root
 
+***
 
 ```groovy
 allprojects {
@@ -28,6 +29,8 @@ allprojects {
     }
 ```
 
+***
+
 And add the line below to gradle.build module (such as app , ....)
 
 ```groovy
@@ -38,7 +41,11 @@ And add the line below to gradle.build module (such as app , ....)
 
 ```
 
-if using androidx
+***
+
+If using androidx
+
+Note: Support androidx from version 0.1.1 to later
 
 ```groovy
 

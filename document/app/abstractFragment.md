@@ -10,9 +10,12 @@ menu: false
 The abstractFragment is subClass from the fragment.
 
 For use The abstractFragment must be extend fragment from this.
+
 ```java
 public class MainFragment extends AbstractFragment
 ```
+
+***
 
 #### getTagId
 Return fragment identifier
@@ -20,6 +23,8 @@ Return fragment identifier
 ```java
 getTagId();
 ```
+
+***
 
 #### setTagId
 Set identifier for fragment
@@ -31,6 +36,8 @@ Set identifier for fragment
 fragment.setTagId("exampleTagId");
 ```
 
+***
+
 #### fragmentManager
 Return instance of fragmentManager to do transactions
 
@@ -39,6 +46,8 @@ Note: To use, the activity must inherit from [the abstractActivity](/document/ap
 ```java
 FragmentTransaction transaction = fragmentManager().beginTransaction();
 ```
+
+***
 
 #### actionFragment
 ActionFragment has the function to change the fragment
@@ -52,12 +61,16 @@ ActionFragment has the function to change the fragment
 fragment.actionFragment(R.id.frameLayout, AbstractFragment.TYPE_REPLACE, true);
 ```
 
+***
+
 #### removeFragmentPopBackStack
 Remove the fragment from backstack
 
 ```java
 fragment.removeFragmentPopBackStack();
 ```
+
+***
 
 #### setInstantiate
 Find instance of this fragment in backstack
