@@ -9,6 +9,12 @@ github_username:  acharkit
 # Build settings
 markdown: kramdown
 theme: jekyll-materialdocs
+
+plugins:
+  - jekyll-remote-theme
+remote_theme: chromatical/jekyll-materialdocs
+
+
 # plugins:
 #   - jekyll-feed
 
