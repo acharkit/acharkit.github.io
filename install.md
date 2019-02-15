@@ -4,9 +4,9 @@ title: install
 permalink: /install
 ---
 
-# Install
+## Install
 
-## Install from AAR
+### Install from AAR
 
 For use acharkit must be [download](https://github.com/acharkit/acharkit-android/releases) last version.
 
