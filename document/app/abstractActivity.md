@@ -14,14 +14,14 @@ For use The abstractActivity must be extend activity from this.
 public class MainActivity extends AbstractActivity
 ```
 
-### getActivity
+#### getActivity
 Return current instance from this activity
 
 ```java
 getActivity();
 ```
 
-### startActivity
+#### startActivity
 Show other activity with intent
 
     argument:
@@ -31,21 +31,21 @@ Show other activity with intent
 startActivity(NextActivity.class);}
 ```
 
-### getVisibleFragment()
+#### getVisibleFragment()
 Return current fragment (if exist fragment)
 
 ```java
 getVisibleFragment();
 ```
 
-### getFragmentList
+#### getFragmentList
 Return list of fragment in backstack
 
 ```java
 getFragmentList();
 ```
 
-### findFragment
+#### findFragment
 Find the fragment from backstack
 
     argument:
@@ -55,7 +55,7 @@ Find the fragment from backstack
 findFragment("tagIdFragment");
 ```
 
-### hasBackStack
+#### hasBackStack
 Check any fragment is exist in backstack
 
 ```java
@@ -64,14 +64,14 @@ if (!hasBackStack()) {
 }
 ```
 
-### clearBackStack
+#### clearBackStack
 Clear any fragment from backstack
 
 ```java
 clearBackStack();
 ```
 
-### presentFragment
+#### presentFragment
 Show fragment instance in activity
 
     argument:
