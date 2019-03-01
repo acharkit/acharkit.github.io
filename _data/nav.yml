@@ -8,6 +8,16 @@
   parent: app
   url: "/document/app/abstractFragment"
 
+
+- title: "Downloader"
+  id: downloader
+
+- title: "Downloader"
+  parent: downloader
+  url: "/document/downloader/downloader"
+
+
+
 - title: "Guide"
   id: guide
 

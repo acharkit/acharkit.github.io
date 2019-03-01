@@ -33,7 +33,7 @@ Show other activity with intent
         Class class
 
 ```java
-startActivity(NextActivity.class);}
+startActivity(NextActivity.class);
 ```
 
 ***
